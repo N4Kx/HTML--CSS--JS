@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=UTF-8>
+	<title>Три колонки</title>
+	<style>
+		* {
+			margin: 0;
+		}
+		.box3 {
+			/*border: 3px solid black;*/
+			background: url("img/ball3.png") 20% 0% no-repeat,					/* main левый верхний*/
+				url("img/ball3.png") 20% 100% no-repeat,							/* main левый нижний*/
+				url("img/ball3.png") calc(100% - 200px) 0% no-repeat,			/* main правый верхний*/
+				url("img/ball3.png") calc(100% - 200px) 100% no-repeat,		/* main правый верхний*/
+				url("img/back/middle.png") 20% 0 repeat-y;
+		}
+		.box2 {
+			background: url("img/ball3.png") 0% 0% no-repeat,					/* menu левый верхний*/
+				url("img/ball3.png") 0% 100% no-repeat,							/* menu левый нижний*/
+				url("img/ball3.png") calc(21% - 100px) 0% no-repeat,			/* menu правый верхний*/
+				url("img/ball3.png") calc(21% - 100px) 100% no-repeat,		/* menu правый верхний*/
+				url("img/back/left_20perc.png") 20% 0 repeat-y;
+		}
+		.box1 {
+			/*border: 3px solid black;*/
+			background: 
+				url("img/ball3.png") calc(100% - 100px) 0% no-repeat,			/* sidebar левый верхний*/
+				url("img/ball3.png") calc(100% - 100px) 100% no-repeat,		/* sidebar левый нижний*/
+				url("img/ball3.png") 100% 100% no-repeat,							/* sidebar правый нижний*/
+				url("img/ball3.png") 100% 0% no-repeat,							/* sidebar правый верхний*/
+				url("img/back/right_200.png") right top repeat-y;
+		}
+		.menu {
+			/*border: 1px solid red;*/
+			width: 20%;
+			float: left;
+		}
+		.sidebar {
+			/*border: 1px solid green;*/
+			width: 200px;
+			float: right;
+		}
+		.main {
+			/*border: 1px dotted black;*/
+			margin: 0 210px 0 21%;
+		}
+		.rasp {
+			clear: both;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="box3">
+		<div class="box2">
+			<div class="box1">
+				<div class="menu"> Menu Menu Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque odio in, qui
+					quam asperiores provident? Debitis deleniti nemo sunt corrupti eius, incidunt, repellat provident
+					doloribus rem porro blanditiis nihil est?</div>
+				<div class="sidebar"> sidebar </div>
+				<div class="main">Main Main Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, cum libero sit
+					provident ipsum maiores ratione repellendus temporibus, officiis vel, architecto praesentium facilis odio
+					tempore repudiandae voluptatibus hic quaerat. Tempora. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti exercitationem natus qui velit aliquam corporis nihil ipsa, ab explicabo voluptatibus nobis praesentium quod quisquam! Ratione totam non maiores saepe inventore! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptatum dignissimos beatae expedita aperiam earum exercitationem cum, tempora pariatur voluptate facere accusamus perferendis necessitatibus in a fugit, laudantium illum explicabo? Harum? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad provident, officiis, iure fuga consequatur, ipsa cum aspernatur deleniti possimus dolorum molestiae rem! Cum deleniti consequatur itaque sunt odit, inventore laudantium. Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse sapiente minima alias, aliquid aperiam corporis debitis fuga eius consequuntur vel nostrum reiciendis neque distinctio velit illo ducimus mollitia? Sed, itaque. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolor voluptate culpa voluptatum illum sequi? Ad aperiam, perferendis adipisci eligendi eum ex voluptas accusamus itaque, necessitatibus quas tenetur. Libero, eligendi fuga? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique quidem error, dolore exercitationem reiciendis sunt repellat, illum vero molestiae laborum aliquam tempora perspiciatis. Aspernatur quod laboriosam dolore sit quos quidem! Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis aliquid, deleniti eos, dolorem, magni sit non amet consequuntur labore vero quas iure? Repudiandae deserunt voluptatum sapiente, beatae aspernatur cum harum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ducimus nihil tempora officiis necessitatibus deleniti nemo alias commodi magnam maiores est nulla esse, itaque saepe doloribus iure doloremque soluta eius consequuntur.</div>
+				<div class="rasp"></div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,0 +1,24 @@
+.grid__wrapper {
+	display: grid;
+	grid-template-columns: 200px 1fr;
+	grid-template-rows: 100px 100px 100px;
+	grid-template-areas:
+		'header header'
+		'menu   refs'
+		'menu   refs';
+}
+
+.label {
+	background-color: red;
+	grid-area: header;
+}
+
+.img {
+	background-color: yellow;
+	grid-area: menu;
+}
+
+.text {
+	background-color: green;
+	grid-area: refs;
+}

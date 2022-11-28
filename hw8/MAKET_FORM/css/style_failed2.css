@@ -1,0 +1,100 @@
+	.wrapper {
+		position: relative;
+	}
+
+	.title__wrapper {
+		position: relative;
+		top: 0;
+	}
+
+	.title__wrapper input {
+		position: absolute;
+		top: 1.2rem;
+		left: 0;
+		right: 0;
+	}
+
+	.rubric__wrapper {
+		position: relative;
+		top: 2rem;
+	}
+
+	.rubric__wrapper select {
+		position: absolute;
+		top: 1.2rem;
+		left: 0;
+		width: 100%;
+	}
+
+	.publication {
+		position: relative;
+		top: 4rem;
+	}
+
+	.checkbox {
+		position: relative;
+		top: 4rem;
+	}
+
+	.textarea__wrapper {
+		position: relative;
+		top: 4rem;
+	}
+
+	.textarea__wrapper input {
+		display: block;
+	}
+
+	#text {
+		width: 100%;
+	}
+
+	@media screen and (min-width: 601px) {
+		.title__wrapper input {
+			left: 15rem;
+			top: 0;
+		}
+
+		.rubric__wrapper {
+			position: relative;
+			top: 0.5rem;
+		}
+
+		.rubric__wrapper select {
+			position: absolute;
+			top: 0;
+			left: 15rem;
+			width: auto;
+		}
+
+		.publication {
+			top: 1rem;
+		}
+
+		.radio__btn {
+			display: inline-block;
+		}
+
+		.radio__btn__wrapper {
+			position: absolute;
+			top: 0;
+			left: 15rem;
+		}
+
+		.checkbox {
+			position: relative;
+			top: 1rem;
+		}
+
+		.checkbox input {
+			position: absolute;
+			top: 0;
+			left: 15rem;
+		}
+
+		.textarea__wrapper {
+			position: relative;
+			top: 1rem;
+		}
+
+}

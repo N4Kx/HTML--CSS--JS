@@ -1,0 +1,20 @@
+.wrapper {
+	overflow-y: scroll;
+	overflow-x: hidden;
+	width: 560px;
+	height: 900px;
+}
+
+p {
+	font-weight: bold;
+}
+
+.html {
+	overflow: hidden;
+}
+
+.wrapper iframe,
+.wrapper a {
+	display: block;
+	margin-bottom: 20px;
+}

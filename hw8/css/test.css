@@ -1,0 +1,19 @@
+body {
+	position: relative;
+}
+
+.input_article__wrapper *{
+	display: block;
+}
+
+.input_article__wrapper {
+	position: relative;
+	top: 0;
+	bottom: 0;
+	height: 100%;
+}
+
+#input_article {
+	position: relative;
+	width: 100%;
+}

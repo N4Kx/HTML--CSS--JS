@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=UTF-8>
+	<title>LINKS</title>
+	<style>
+		div {
+			margin-bottom: 10px;
+		}
+
+		a {
+			color: green;
+		}
+
+		a:hover {
+			color: red;
+			text-decoration: none;
+		}
+
+		div.after-picture a {
+			padding: 5px;
+		}
+
+		div.after-picture a::after {
+			content: url('img/brd.png');
+			padding: 0 5px;
+		}
+
+		div.after-picture a:last-child::after {
+			content: none;
+		}
+
+		div.after-border a {
+			border-right: 3px solid red;
+			padding: 5px 10px;
+		}
+
+		div.after-border a:last-child {
+			border-right: none;
+		}
+
+		div.after-symbol a {
+			padding: 0 5px;
+		}
+
+		div.after-symbol a::after {
+			content: '|';
+			color: red;
+			font-weight: 900;
+			font-size: 30px;
+			padding: 0 5px;
+		}
+
+		div.after-symbol a:last-child::after {
+			content: none;
+		}
+	</style>
+</head>
+
+<body>
+	<div class="after-picture">
+		<a href="#">первая ссылка</a>
+		<a href="#">вторая ссылка</a>
+		<a href="#">третья ссылка</a>
+		<a href="#">четвертая ссылка</a>
+		<a href="#">пятая ссылка</a>		
+		<!--Ссылки строчный элемент. Простые ссылки, в стилях с псевдомэлементом ::after задана разделяющая картинка. В последнем элементе убрано содержимое. Недостатки - нужно подготавливать картинку нужной высоты/толщины. При изменении размера шрифтов - придется менять размеры картинки.-->
+	</div>
+
+	<div class="after-border">
+		<a href="#">первая ссылка</a>
+		<a href="#">вторая ссылка</a>
+		<a href="#">третья ссылка</a>
+		<a href="#">четвертая ссылка</a>
+		<a href="#">пятая ссылка</a>
+		<!--Ссылки строчный элемент. Правая рамка для всех ссылок. Для последней ссылки рамка обнулена-->
+	</div>
+
+	<div class="after-symbol">
+		<a href="#">первая ссылка</a>
+		<a href="#">вторая ссылка</a>
+		<a href="#">третья ссылка</a>
+		<a href="#">четвертая ссылка</a>
+		<a href="#">пятая ссылка</a>
+		<!--Ссылки строчный элемент. Разделители - символ. Символ может отсутствовать в каких-то шрифтах.-->
+	</div>
+</body>
+
+</html>

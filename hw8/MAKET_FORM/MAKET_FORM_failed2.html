@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=UTF-8>
+	<title>MAKET_FORM</title>
+	<link rel="stylesheet" href="css/style_failed2.css">
+</head>
+
+<body>
+	<form class="wrapper" method="post" action="https://fe.it-academy.by/TestForm.php">
+		<p>
+			Для публикации вашей статьи заполните, пожалуйста, следующую форму:
+		</p>
+		<div class="title__wrapper">
+			<input type="text" name="title" id="title">
+			<label for="title">Название статьи:</label>
+		</div>
+
+		<div class="rubric__wrapper">
+			<select name="rubic" id="rubic">
+				<option value="1">компьютерная техника</option>
+				<option value="2">графика и дизайн</option>
+				<option value="3" selected>программирование</option>
+			</select>
+			<label for="rubic">Рубрика:</label>
+		</div>
+
+		<div class="publication">
+			<label>Публикация:</label>
+			<div class="radio__btn__wrapper">
+				<div class="radio__btn">
+					<input type="radio" name="publication" value="1" id="publication"><span>на сайте</span>
+				</div>
+				<div class="radio__btn">
+					<input type="radio" name="publication" value="2" id="publication"><span>в журнале</span>
+				</div>
+				<div class="radio__btn">
+					<input type="radio" name="publication" value="3" id="publication"><span>на сайте и в журнале</span>
+				</div>
+			</div>
+		</div>
+
+		<div class="checkbox">
+			<label for="allow">Разрешить комментарии:</label>
+			<input type="checkbox" name="allow" id="allow" checked>
+		</div>
+
+		<div class="textarea__wrapper">
+			<label for="text">Текст статьи:</label>
+			<div class="text-area">
+				<textarea type="text-area" name="text" id="text"></textarea>
+			</div>
+			<input type="submit" value="Опубликовать" class="submit">
+		</div>
+	</form>
+</body>
+
+</html>

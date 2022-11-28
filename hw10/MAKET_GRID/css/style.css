@@ -1,0 +1,126 @@
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	display: grid;
+	grid-template-columns: 148px 1fr;
+	grid-template-rows: 60px 1fr 60px;
+}
+
+.header,
+.footer {
+	grid-column: 1 / span 2;
+	font-family: sans-serif;
+	font-size: 20px;
+	color: #0000ff;
+	padding: 15px;
+	margin: 0;
+	background-color: #add8e6;
+	text-transform: uppercase;
+	text-align: center;
+}
+
+.menu,
+.main {
+	grid-row: 2 / 3;
+}
+
+.footer {
+	grid-row: 3 / 4;
+}
+
+.menu {
+	background-color: #f0e68c;
+	padding: 10px;
+}
+
+.list {
+	padding-left: 30px;
+}
+
+.main {
+	font-family: sans-serif;
+	font-size: 20px;
+	background: url('../img/ball.png') repeat-y right top;
+	padding: 0px 16px 20px 20px;
+}
+
+.main h2 {
+	text-align: center;
+	padding: 22px;
+	margin: 0px;
+}
+
+.main img {
+	width: 200px;
+	height: 133px;
+	float: left;
+	margin: 0px 12px 25px 0px;
+}
+
+.main p {
+	margin-top: 0;
+}
+
+@media screen and (max-width: 530px) {
+
+	.header,
+	.footer {
+		display: none;
+	}
+
+	.wrapper {
+		grid-template-columns: 1fr;
+		grid-template-rows: minmax(60px, 1fr) minmax(60px, 100px);
+		grid-template-areas:
+			'main'
+			'menu';
+	}
+
+	.menu {
+		grid-area: menu;
+		background-color: white;
+	}
+
+	.main {
+		grid-area: main;
+		background: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.main h2 {
+		padding-top: 0;
+	}
+
+	.main img {
+		float: none;
+		width: 100%;
+		height: auto;
+		margin: 0 auto;
+		padding: 0;
+	}
+
+	.main p {
+		margin: 0;
+	}
+
+	.list {
+		margin: 0;
+		padding: 0;
+	}
+
+	.list li {
+		list-style-type: none;
+		display: inline;
+		margin-right: 5px;
+	}
+
+	.menu h3 {
+		margin: 0;
+		padding: 0;
+	}
+}

@@ -1,0 +1,41 @@
+p.NAME {
+	font-weight: bold;
+	font-size: 30px;
+	margin: 20px 0 0 0;
+}
+
+.BIRTHDAY {
+	color: green;
+}
+
+.CHAMPION {
+	font-weight: bold;
+	color: red;
+}
+
+.INFO {
+	font-style: italic;
+	color: blue;
+}
+
+a {
+	font-weight: bold;
+	text-decoration: none;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+p {
+	margin: 0;
+}
+
+@media print {
+	* {
+		color: black !important;
+	}
+	a {
+		display: none;
+	}
+}

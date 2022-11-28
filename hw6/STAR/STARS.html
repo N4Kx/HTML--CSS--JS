@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset=UTF-8>
+	<title>STARS</title>
+	<style>
+		.rating {
+			margin: 0;
+			padding: 0;
+			display: inline;
+		}
+
+		.rating__star {
+			display: inline-block;
+			width: 76px;
+			height: 78px;
+			background: url('img/star0.png') no-repeat;
+		}
+
+		.rating:hover .rating__star {
+			background: url('img/star1.png') no-repeat;
+		}
+
+		.rating__star:hover~.rating__star {
+			background: url('img/star0.png') no-repeat;
+		}
+	</style>
+</head>
+
+<body>
+
+</body>
+<div class="rating">
+	<div class="rating__star"></div>
+	<div class="rating__star"></div>
+	<div class="rating__star"></div>
+	<div class="rating__star"></div>
+	<div class="rating__star"></div>
+</div>
+
+</html>

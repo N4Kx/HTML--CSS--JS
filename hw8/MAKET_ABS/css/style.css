@@ -1,0 +1,44 @@
+.img__wrapper {
+	position: relative;
+}
+
+.img__container {
+	position: relative;
+	height: 400px;
+	width: 410px;
+	margin: 0 auto;
+}
+
+.img1 {
+	position: absolute;
+}
+
+.img2 {
+	position: absolute;
+	left: 215px;
+}
+
+.img3 {
+	position: absolute;
+	top: 50px;
+	left: 70px;
+	z-index: 1;
+}
+
+.img4 {
+	position: absolute;
+	left: 100px;
+	top: 200px;
+}
+
+.img1:hover {
+	z-index: 2;
+}
+
+.img2:hover {
+	z-index: 2;
+}
+
+.img4:hover {
+	z-index: 2;
+}

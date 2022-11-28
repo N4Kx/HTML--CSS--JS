@@ -1,0 +1,42 @@
+.title__wrapper {
+	float: left;
+	width: 12em;
+}
+
+.input__wrapper {
+	margin-left: 12em;
+	margin-bottom: 0.5em;
+}
+
+#text1,
+#text2 {
+	width: 100%;
+}
+
+.radio__btn {
+	display: inline-block;
+}
+
+@media screen and (max-width: 600px) { 
+	.title__wrapper {
+		float: none;
+	}
+
+	.input__wrapper {
+		margin-left: 0;
+		margin-bottom: 0.5em;
+	}
+
+	.radio__btn {
+		display: block;
+	}
+
+	#rubric {
+		width: 100%;
+	}
+
+	.title__wrapper2 {
+		float: left;
+		width: 10.7em;
+	}
+}
